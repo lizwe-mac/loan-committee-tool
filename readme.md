@@ -1,4 +1,4 @@
-# VoteApp
+# Loan Committe Tool
 
 A simple app for rating loan applicants
 

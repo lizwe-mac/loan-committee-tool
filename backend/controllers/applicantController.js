@@ -25,8 +25,8 @@ const setApplicant = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc    Get all applicants
-// @route   GET /api/info
+// @desc    Get single applicants
+// @route   GET /api/applicants/:id
 // @access  Private
 const getApplicant = asyncHandler(async (req, res) => {
   const applicant = await Applicant.findById(req.params.id);
@@ -34,7 +34,37 @@ const getApplicant = asyncHandler(async (req, res) => {
   res.status(200).json(applicant);
 });
 
+// @desc    Update single applicant
+// @route   PUT /api/applicants/:id
+// @access  Private
+const updateApplicant = asyncHandler(async (req, res) => {
+  // Check for user
+  // if (!req.user) {
+  //   res.status(401);
+  //   throw new Error("User not found");
+  // }
+
+  const updatedApplicant = await Applicant.findByIdAndUpdate(
+    req.params.id,
+    { $push: { voters: req.body.name, notes: req.body } },
+    { new: true }
+    // function (err, doc) {
+    //   if (err) {
+    //     console.log("Applicant not found not found");
+    //   }
+    // }
+  );
+
+  if (!updatedApplicant) {
+    res.status(400);
+    throw new Error("Applicant not found not found");
+  }
+
+  res.status(200).json(updatedApplicant);
+});
+
 module.exports = {
   setApplicant,
   getApplicant,
+  updateApplicant,
 };

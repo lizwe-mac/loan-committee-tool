@@ -1,21 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.17924174.css",
-    "main.js": "/static/js/main.a715b1d3.js",
-    "static/js/703.abcb1e46.chunk.js": "/static/js/703.abcb1e46.chunk.js",
-    "static/js/617.64e425b4.chunk.js": "/static/js/617.64e425b4.chunk.js",
-    "static/media/landing_image.png": "/static/media/landing_image.b75e8b197128d988e2c8.png",
-    "static/media/kaushan-script-all-400-normal.woff": "/static/media/kaushan-script-all-400-normal.ba623d1ca520a2a711d2.woff",
-    "static/media/kaushan-script-latin-400-normal.woff2": "/static/media/kaushan-script-latin-400-normal.2855d49bba6b2cb7bec5.woff2",
-    "static/media/kaushan-script-latin-ext-400-normal.woff2": "/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
-    "index.html": "/index.html",
-    "main.17924174.css.map": "/static/css/main.17924174.css.map",
-    "main.a715b1d3.js.map": "/static/js/main.a715b1d3.js.map",
-    "703.abcb1e46.chunk.js.map": "/static/js/703.abcb1e46.chunk.js.map",
-    "617.64e425b4.chunk.js.map": "/static/js/617.64e425b4.chunk.js.map"
+    "main.css": "/static/css/main.39893f37.css",
+    "main.js": "/static/js/main.52380d9e.js",
+    "static/media/image.jpg": "/static/media/image.f3f8129eecfbbbdda1dd.jpg",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.17924174.css",
-    "static/js/main.a715b1d3.js"
+    "static/css/main.39893f37.css",
+    "static/js/main.52380d9e.js"
   ]
 }

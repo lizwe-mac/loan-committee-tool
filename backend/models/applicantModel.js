@@ -42,7 +42,7 @@ const ApplicantSchema = mongoose.Schema({
     type: [String],
   },
   notes: {
-    type: [String],
+    type: [Object],
   },
 });
 
